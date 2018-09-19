@@ -1,0 +1,111 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 93, Failures: 11, Errors: 0, Skipped: 33, Time elapsed: 1,545.561 s <<< FAILURE! - in TestSuite
+Customer_Account_Details(com.ril.feedzai.testScript.JPB_CustomerSearchPageTest)  Time elapsed: 4.034 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.ril.feedzai.testScript.JPB_CustomerSearchPageTest.Customer_Account_Details(JPB_CustomerSearchPageTest.java:70)
+
+LMW_Instrument_details(com.ril.feedzai.testScript.LMW_TranDetailsPageTest)  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: Card details not found in instrument details section for IBW transaction
+	at com.ril.feedzai.testScript.LMW_TranDetailsPageTest.LMW_Instrument_details(LMW_TranDetailsPageTest.java:41)
+
+IBW_Tran(com.ril.feedzai.testScript.IBW_TranDetailsPageTest)  Time elapsed: 0.647 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a href="#merchant">...</a> is not clickable at point (550, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.IBW_TranDetailsPageTest.IBW_Tran(IBW_TranDetailsPageTest.java:30)
+
+Customer_Details(com.ril.feedzai.testScript.IBW_TranDetailsPageTest)  Time elapsed: 2.481 s  <<< FAILURE!
+java.lang.AssertionError: Mobile number not found in customer details section for IBW transaction
+	at com.ril.feedzai.testScript.IBW_TranDetailsPageTest.Customer_Details(IBW_TranDetailsPageTest.java:52)
+
+transaction_Details(com.ril.feedzai.testScript.IBW_TranDetailsPageTest)  Time elapsed: 2.294 s  <<< FAILURE!
+java.lang.AssertionError: Customer app id not found in transaction details section for IBW transaction
+	at com.ril.feedzai.testScript.IBW_TranDetailsPageTest.transaction_Details(IBW_TranDetailsPageTest.java:94)
+
+P2M_Tran(com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest)  Time elapsed: 1.278 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a href="#merchant">...</a> is not clickable at point (550, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest.P2M_Tran(BeneficiaryPan_ValidationPageTest.java:32)
+
+LMW_Tran(com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest)  Time elapsed: 0.916 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a href="#merchant">...</a> is not clickable at point (550, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest.LMW_Tran(BeneficiaryPan_ValidationPageTest.java:74)
+
+WPP_Tran(com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest)  Time elapsed: 1.622 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a href="#merchant">...</a> is not clickable at point (550, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest.WPP_Tran(BeneficiaryPan_ValidationPageTest.java:118)
+
+MPP_Tran(com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest)  Time elapsed: 0.843 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a href="#merchant">...</a> is not clickable at point (550, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest.MPP_Tran(BeneficiaryPan_ValidationPageTest.java:160)
+
+IBW_trans_details(com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest)  Time elapsed: 0.845 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a href="#merchant">...</a> is not clickable at point (550, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest.IBW_trans_details(BeneficiaryPan_ValidationPageTest.java:190)
+
+FeedzaiPulse(com.ril.feedzai.testScript.FeedzaiPulseHomePageTest)  Time elapsed: 5.521 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a class="dropdown-toggle fdz-user-dropdown">...</a> is not clickable at point (1260, 33). Other element would receive the click: <div id="select2-drop-mask" class="select2-drop-mask" style="display: block;"></div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'LT0021232', ip: '10.51.174.49', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\ANKUR~1.JAI\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: c981136c42f11aec577f454296f3b199
+	at com.ril.feedzai.testScript.FeedzaiPulseHomePageTest.FeedzaiPulse(FeedzaiPulseHomePageTest.java:28)
+

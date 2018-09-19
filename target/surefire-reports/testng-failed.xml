@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [suite 1]">
+  <listeners>
+    <listener class-name="com.ril.Feedzai.Utility.RetryListenerClass"/>
+    <listener class-name="com.ril.Feedzai.Utility.ListnerImpl"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Feedzai Automation1(failed)">
+    <classes>
+      <class name="com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="MPP_Tran"/>
+          <include name="benPanValidate"/>
+          <include name="endReport"/>
+          <include name="P2M_Tran"/>
+          <include name="Alertp"/>
+          <include name="IBW_trans_details"/>
+          <include name="WPP_Tran"/>
+          <include name="LMW_Tran"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest -->
+      <class name="com.ril.feedzai.testScript.LMW_TranDetailsPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="LMW_Instrument_details"/>
+          <include name="LMW"/>
+          <include name="Alertp"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.LMW_TranDetailsPageTest -->
+      <class name="com.ril.feedzai.testScript.FeedzaiPulseHomePageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Logout"/>
+          <include name="TimeMachine"/>
+          <include name="Health"/>
+          <include name="Version"/>
+          <include name="Job"/>
+          <include name="Alert"/>
+          <include name="FeedzaiPulse"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.FeedzaiPulseHomePageTest -->
+      <class name="com.ril.feedzai.testScript.JPB_CustomerSearchPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="JpbcustSear"/>
+          <include name="ReportSetUP"/>
+          <include name="Customer_Account_Details"/>
+          <include name="Alertpage"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.JPB_CustomerSearchPageTest -->
+      <class name="com.ril.feedzai.testScript.IBW_TranDetailsPageTest">
+        <methods>
+          <include name="Customer_Details"/>
+          <include name="getResult"/>
+          <include name="IBW"/>
+          <include name="endReport"/>
+          <include name="Alertp"/>
+          <include name="transaction_Details"/>
+          <include name="IBW_Tran"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.IBW_TranDetailsPageTest -->
+      <class name="com.ril.feedzai.testScript.AlertPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="pulseh"/>
+          <include name="MarkNotFraud"/>
+          <include name="SelectAlert"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.AlertPageTest -->
+    </classes>
+  </test> <!-- Feedzai Automation1(failed) -->
+</suite> <!-- Failed suite [suite 1] -->

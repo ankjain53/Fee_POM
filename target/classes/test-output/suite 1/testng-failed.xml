@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite 1]">
+  <listeners>
+    <listener class-name="com.ril.Feedzai.Utility.RetryListenerClass"/>
+    <listener class-name="com.ril.Feedzai.Utility.ListnerImpl"/>
+  </listeners>
+  <test thread-count="5" name="Feedzai Automation1(failed)">
+    <classes>
+      <class name="com.ril.feedzai.testScript.HoldandReleasePageTest">
+        <methods>
+          <include name="NotFraud"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Suspicious"/>
+          <include name="HRTest"/>
+          <include name="Alert"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.HoldandReleasePageTest -->
+      <class name="com.ril.feedzai.testScript.IBW_TranDetailsPageTest">
+        <methods>
+          <include name="Customer_Details"/>
+          <include name="Payment_Details"/>
+          <include name="IBW"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Alertp"/>
+          <include name="transaction_Details"/>
+          <include name="IBW_Tran"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.IBW_TranDetailsPageTest -->
+      <class name="com.ril.feedzai.testScript.P2M_TranDetailsPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="P2M_merchant_app_id"/>
+          <include name="endReport"/>
+          <include name="Customer_Data"/>
+          <include name="P2M"/>
+          <include name="Alertp"/>
+          <include name="ReportSetUP"/>
+          <include name="P2M_Tran"/>
+          <include name="Cust_app_id"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.P2M_TranDetailsPageTest -->
+      <class name="com.ril.feedzai.testScript.TransactionpageTest">
+        <methods>
+          <include name="Alert"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="SelectTrans"/>
+          <include name="markTransNotFraud"/>
+          <include name="markTransFraud"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.TransactionpageTest -->
+      <class name="com.ril.feedzai.testScript.FeedzaiPulseHomePageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Logout"/>
+          <include name="TimeMachine"/>
+          <include name="Health"/>
+          <include name="Version"/>
+          <include name="Job"/>
+          <include name="Alert"/>
+          <include name="FeedzaiPulse"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.FeedzaiPulseHomePageTest -->
+      <class name="com.ril.feedzai.testScript.LMW_TranDetailsPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="LMW_CustomerMob"/>
+          <include name="LMW_TranData"/>
+          <include name="LMW_Instrument_details"/>
+          <include name="LMW"/>
+          <include name="LMW_transaction_details"/>
+          <include name="Alertp"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.LMW_TranDetailsPageTest -->
+      <class name="com.ril.feedzai.testScript.JPB_CustomerSearchPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Customer_Details_CIFID"/>
+          <include name="JpbcustSear"/>
+          <include name="JBP_SearchCIFID"/>
+          <include name="VerifyAlldetail"/>
+          <include name="Customer_Account_Number"/>
+          <include name="ReportSetUP"/>
+          <include name="Customer_Account_Details"/>
+          <include name="Alertpage"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.JPB_CustomerSearchPageTest -->
+      <class name="com.ril.feedzai.testScript.AMSearchPageTest">
+        <methods>
+          <include name="endReport"/>
+          <include name="ResponseCodeSearch"/>
+          <include name="SearchTab"/>
+          <include name="ChannelSearch"/>
+          <include name="CustSearch"/>
+          <include name="CusNumSearch"/>
+          <include name="AgentIDSearch"/>
+          <include name="ReportSetUP"/>
+          <include name="SrcInstIDSearch"/>
+          <include name="getResult"/>
+          <include name="Search"/>
+          <include name="SenderPanSearch"/>
+          <include name="CardBinSearch"/>
+          <include name="MerNumSearch"/>
+          <include name="MerSearch"/>
+          <include name="HashedCardPanSearch"/>
+          <include name="CustAppIDSearch"/>
+          <include name="Alert"/>
+          <include name="ProcessCodeSearch"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.AMSearchPageTest -->
+      <class name="com.ril.feedzai.testScript.MerchantPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="MerchantDeatilsID"/>
+          <include name="MerchantDeatilsMno"/>
+          <include name="Alert"/>
+          <include name="ReportSetUP"/>
+          <include name="MerchantTab"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.MerchantPageTest -->
+      <class name="com.ril.feedzai.testScript.AlertPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="MarkSuspicious"/>
+          <include name="pulseh"/>
+          <include name="MarkNotFraud"/>
+          <include name="SelectAlert"/>
+          <include name="MarkFraud"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.AlertPageTest -->
+      <class name="com.ril.feedzai.testScript.ReportPageTest">
+        <methods>
+          <include name="Alert"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="ReportCheck"/>
+          <include name="Feedzaireport"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.ReportPageTest -->
+      <class name="com.ril.feedzai.testScript.JBP_AdvanceSearchPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="JBPSender_pan"/>
+          <include name="Beneficiary_MMID"/>
+          <include name="Sender_MMID"/>
+          <include name="JBP_AdvanceSearch"/>
+          <include name="Beneficiary_pan"/>
+          <include name="JBPAdvanceSearch"/>
+          <include name="Alert"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.JBP_AdvanceSearchPageTest -->
+      <class name="com.ril.feedzai.testScript.AgentPageTest">
+        <methods>
+          <include name="verifyAgentdetail"/>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Alert"/>
+          <include name="AgentTab"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.AgentPageTest -->
+      <class name="com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="MPP_Tran"/>
+          <include name="endReport"/>
+          <include name="benPanValidate"/>
+          <include name="P2M_Tran"/>
+          <include name="Alertp"/>
+          <include name="IBW_trans_details"/>
+          <include name="WPP_Tran"/>
+          <include name="LMW_Tran"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.BeneficiaryPan_ValidationPageTest -->
+      <class name="com.ril.feedzai.testScript.MPP_TranDetailsPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Card_dt"/>
+          <include name="MPP"/>
+          <include name="transaction_dt"/>
+          <include name="MPP_Tran"/>
+          <include name="ReportSetUP"/>
+          <include name="Alertp"/>
+          <include name="Customer_dt"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.MPP_TranDetailsPageTest -->
+      <class name="com.ril.feedzai.testScript.CustomerPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="CustDetailInfo"/>
+          <include name="custIdSearch"/>
+          <include name="Alert"/>
+          <include name="CustMobSearch"/>
+          <include name="ReportSetUP"/>
+          <include name="Custsearch"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.CustomerPageTest -->
+      <class name="com.ril.feedzai.testScript.SettingsPageTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="endReport"/>
+          <include name="Alert"/>
+          <include name="Setting"/>
+          <include name="SettingTab"/>
+          <include name="ReportSetUP"/>
+        </methods>
+      </class> <!-- com.ril.feedzai.testScript.SettingsPageTest -->
+    </classes>
+  </test> <!-- Feedzai Automation1(failed) -->
+</suite> <!-- Failed suite [suite 1] -->
